@@ -1,0 +1,96 @@
+{
+  "name": "typescript-react-storybook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc",
+    "test": "jest --coverage",
+    "start": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/preset-typescript": "^7.3.3",
+    "@emotion/core": "^10.0.7",
+    "@emotion/styled": "^10.0.7",
+    "@storybook/addon-a11y": "^5.0.1",
+    "@storybook/addon-backgrounds": "^5.0.1",
+    "@storybook/addon-centered": "^5.0.1",
+    "@storybook/addon-console": "^1.1.0",
+    "@storybook/addon-events": "^5.0.1",
+    "@storybook/addon-info": "^5.0.1",
+    "@storybook/addon-jest": "^5.0.1",
+    "@storybook/addon-knobs": "^5.0.1",
+    "@storybook/addon-notes": "^5.0.1",
+    "@storybook/addon-options": "^5.0.1",
+    "@storybook/addon-storyshots": "^5.0.1",
+    "@storybook/cli": "^5.0.1",
+    "@storybook/theming": "^5.0.1",
+    "@types/jest": "^24.0.11",
+    "@types/react-dom": "^16.8.2",
+    "@types/storybook__react": "^4.0.1",
+    "awesome-typescript-loader": "^5.2.1",
+    "jest": "^24.3.1",
+    "react": "16.8.4",
+    "react-docgen-typescript-loader": "^3.0.1",
+    "react-dom": "^16.8.4",
+    "rxjs": "^6.4.0",
+    "ts-jest": "^24.0.0",
+    "typescript": "^3.3.3333"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@degordian/standards": "^1.0.8",
+    "@storybook/addon-actions": "^5.0.1",
+    "@storybook/addon-links": "^5.0.1",
+    "@storybook/addons": "^5.0.1",
+    "@storybook/react": "^5.0.1",
+    "@types/chai": "^4.1.7",
+    "babel-loader": "^8.0.5",
+    "chai": "^4.2.0",
+    "css-loader": "^2.1.1",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.10.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "tslint": "^5.13.1"
+  },
+  "types": [
+    "jest"
+  ],
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statements": 80
+      }
+    },
+    "forceCoverageMatch": [
+      "^(?!.*test).+\\.(ts|tsx)$"
+    ],
+    "setupFilesAfterEnv": [
+      "./jest.setup.js"
+    ],
+    "transform": {
+      ".(ts|tsx)": "ts-jest"
+    },
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/lib/"
+    ],
+    "testMatch": [
+      "**/tests/?(*.)+(spec|test).ts?(x)"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ]
+  }
+}

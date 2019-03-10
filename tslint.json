@@ -1,0 +1,6 @@
+{
+  "extends": "@degordian/standards/tslint.js",
+  "rules": {
+    "no-empty-interface": [false]
+  }
+}
